@@ -1,0 +1,131 @@
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+
+.navbar{
+    padding: 1.8rem 1rem;
+    span {
+        text-align: right;
+            img{
+            border-radius: 50%;
+            width: 12%;
+        }
+    }
+}
+
+.btn{
+    border-radius: 25px;
+    padding: 0px 20px;
+    background-color:#7b96c4;
+    border:solid #7b96c4 ;
+}
+
+h1{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2d3e5c;
+}
+
+.table {
+    thead {
+        th {
+            vertical-align: bottom;
+            border-bottom: 2px solid #dee2e6;
+            color: #7b96c4 !important;
+        }
+        tr {
+            border-top: hidden;
+        }
+    }
+    td{
+        vertical-align: middle;
+        padding: 35px 14px;
+    }
+}
+
+.table-responsive {
+    padding-top: 30px;
+}
+input{
+    margin-left: 40px;
+    border-radius: 25px;
+    width: 35%;
+    color: #9a9a9a;
+    padding: 5px !important;
+    border: 1px solid #9a9a9a;
+    ::placeholder{
+        color: #9a9a9a;
+    }
+}
+
+.container-fluid{
+    padding-left: 30px;
+    margin-top: 40px;;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+@media screen and (max-width:768px){
+    input{
+        margin: 10px;
+        width: 100% !important;
+    }
+}
+.fix{
+    width: 35%;
+}
+
+.btn-drop{
+    border-radius: 25px;
+    padding: 8px 23px !important;
+    background-color: transparent;
+    border: 1px solid #9a9a9a;
+    color: #9a9a9a;
+    text-align: left;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    padding-top: 15%;
+    pointer-events: none;
+}
+.modal{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #0000001a;
+    z-index: 2;
+    cursor: pointer;
+}
+.modal-content{
+    border: hidden;
+}
+.close{
+    border: 1px solid #7f7f7f;
+    border-radius: 6%;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0;
+}
+h4{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2d3e5c;
+}
+button:focus {
+    outline: transparent;
+}
+input:focus {
+    outline: transparent;
+}

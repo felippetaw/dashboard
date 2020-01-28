@@ -2,7 +2,7 @@
     font-size: 20px;
     cursor: pointer;
     background-color: transparent;
-    color: black;
+    color: #7b96c4;
     border: none;
 }
 
@@ -10,6 +10,7 @@
     padding: 1.8rem 1rem;
     span {
         text-align: right;
+        color: #7b96c4;
             img{
             border-radius: 50%;
             width: 12%;
@@ -19,6 +20,7 @@
 
 .btn{
     border-radius: 25px;
+    font-size:13px;
     padding: 0px 20px;
     background-color:#7b96c4;
     border:solid #7b96c4 ;
@@ -31,6 +33,7 @@ h1{
 }
 
 .table {
+    color: #929292;
     thead {
         th {
             vertical-align: bottom;
@@ -54,12 +57,13 @@ input{
     margin-left: 40px;
     border-radius: 25px;
     width: 35%;
-    color: #9a9a9a;
+    color: #7b96c4;
     padding: 5px !important;
-    border: 1px solid #9a9a9a;
-    ::placeholder{
-        color: #9a9a9a;
-    }
+    border: 1px solid #7b96c4;  
+}
+
+::placeholder{
+    color: #7b96c4 !important;
 }
 
 .container-fluid{
@@ -81,13 +85,14 @@ input{
     width: 35%;
 }
 
-.btn-drop{
+.btn-drop, .btn-drop:hover{
     border-radius: 25px;
     padding: 8px 23px !important;
     background-color: transparent;
-    border: 1px solid #9a9a9a;
-    color: #9a9a9a;
+    border: 1px solid #7b96c4;
+    color: #7b96c4;
     text-align: left;
+    cursor: pointer;
 }
 .modal-dialog {
     position: relative;
@@ -128,4 +133,8 @@ button:focus {
 }
 input:focus {
     outline: transparent;
+}
+.dropdown-item, .dropdown-item:hover {
+    color: #929292 !important;
+    cursor: pointer;
 }

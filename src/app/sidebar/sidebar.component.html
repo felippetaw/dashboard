@@ -2,8 +2,13 @@
     <div class="head">
         <a href="#" class="closebtn" (click)="closeNav()">×</a>
     </div>
-    <a href="#">Grupos Colaborativos</a>
-    <a href="#">Central de Mensagens</a>
-    <a href="#">Cursos em Destaque</a>
-    <a href="#">Histórico</a>
+    <a href="#"><i class="fas fa-poll"></i>Grupos Colaborativos</a>
+    <a href="#"><i class="far fa-envelope"></i> Central de Mensagens</a>
+    <a href="#" class="active" type="button" id="dropMenu" data-toggle="dropdown" (click)="openDrop()"><i class="far fa-file"></i>Cursos em Destaque</a>
+    <div class="dropdown-menu" aria-labelledby="dropMenu">
+        <a class="dropdown-item" href="#">Relatórios</a>
+        <a class="dropdown-item active" href="#">Painel de Cursos</a>
+        <a class="dropdown-item" href="#">Categorias</a>
+    </div>
+    <a href="#"><i class="fas fa-history"></i>Histórico</a>
 </div>

@@ -23,8 +23,8 @@
             <a class="dropdown-item" (click)="sortCompany()">Empresa</a>
             <a class="dropdown-item" (click)="sortQuantity(false)">Maior qtd. de alunos</a>
             <a class="dropdown-item" (click)="sortQuantity(true)">Menor qtd. de alunos</a>
-            <a class="dropdown-item" href="#">Mais recentes</a>
-            <a class="dropdown-item" href="#">Mais antigos</a>
+            <a class="dropdown-item" (click)="sortId(true)">Mais recentes</a>
+            <a class="dropdown-item" (click)="sortId(false)">Mais antigos</a>
           </div>
           <input type="text" id="input" (keyup)="search()" placeholder="Pesquisar cursos ou empresas">
       </div>

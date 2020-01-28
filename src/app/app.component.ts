@@ -35,6 +35,14 @@ export class AppComponent implements OnInit{
     this.keys.sort((a, b) => a.Company > b.Company ? 1 : -1);
   }
 
+  sortId(boo) {
+    if(boo == true) {
+      this.keys.sort((a, b) => parseFloat(a.Id) > parseFloat(b.Id) ? 1 : -1);
+    } else if (boo == false){
+      this.keys.sort((a, b) => parseFloat(a.Id) > parseFloat(b.Id) ? -1 : 1);
+    }
+  }
+
   sortQuantity(boo) {
     if(boo == true) {
       this.keys.sort((a, b) => parseFloat(a.Quantity) > parseFloat(b.Quantity) ? 1 : -1);
@@ -44,24 +52,23 @@ export class AppComponent implements OnInit{
   }
 
   search() {
-    let input, filter, table, tr, td, i, txtValue;
+    let input, filter, table, trs, td, i, txtValue;
 
     input = document.getElementById("input");
     filter = input.value.toUpperCase();
     table = document.getElementById("tab");
-    tr = table.getElementsByTagName("tr");
-    
-    for (i = 0; i < tr.length; i++) {
-      td = tr[i].getElementsByTagName("td")[0];
-      if (td) {
-        txtValue = td.textContent || td.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          tr[i].style.display = "";
-        } else {
-          tr[i].style.display = "none";
-        }
-      }        
+    trs = table.getElementsByTagName("tr");
+
+    for (i = 1; i < trs.length; i++) {
+    let tds = trs[i].getElementsByTagName("td");
+    trs[i].style.display = "none";
+    for (var i2 = 0; i2 < 2; i2++) {
+      if (tds[i2].innerHTML.toUpperCase().indexOf(filter) > -1) {
+        trs[i].style.display = "";
+        continue;
+      }
     }
+  }
   }
 
   openNav() {

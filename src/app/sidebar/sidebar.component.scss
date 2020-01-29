@@ -48,11 +48,13 @@
 .active{
     color: #3e8c94 !important;
 }
-.dropdown-menu.show {
+ul, .collapse.show{
+    list-style-type: none !important;
     display: contents;
     margin-left: 50px !important;
 }
-.dropdown-menu{
+.collapse, ul{
+    margin-left: 50px !important;
     .active{
         color:#fff !important;
         background-color: unset;

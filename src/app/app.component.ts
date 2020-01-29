@@ -29,8 +29,6 @@ export class AppComponent implements OnInit{
   }
   ngOnInit() {
     this.getData();
-    console.log(this.keys);
-    console.log(this.contents);
   } 
   
   sortCompany() {

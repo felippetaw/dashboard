@@ -7,6 +7,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 First of all run `npm install` to install all libs we need to compile the project, and then run `ng serve --open` for a dev server in `http://localhost:4200`
 
+The content in the table's in the `data.json` (path: `src/assets/data.json`), and it's able to read any file with that name and structure
+
 #########################################################
 
 ## Development server

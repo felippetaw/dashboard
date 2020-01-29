@@ -54,9 +54,11 @@ h1{
     padding-top: 30px;
 }
 input{
-    margin-left: 40px;
+    margin-left: 15px;
     border-radius: 25px;
-    width: 35%;
+    border-radius: 25px 0 0 25px;
+    border-right: none !important;
+    width: 38%;
     color: #7b96c4;
     padding: 5px !important;
     border: 1px solid #7b96c4;  
@@ -76,9 +78,17 @@ input{
 }
 
 @media screen and (max-width:768px){
-    input{
-        margin: 10px;
-        width: 100% !important;
+    input, .input-group-text{
+        margin: 10px 0 10px 10px;
+        margin-top: 10px;
+        width: 70% !important;
+        margin-left: 0%;
+    }
+    .btn-drop{
+        margin-left: 0% !important;
+    }
+    .input-group-text {
+        padding: 0.375rem 1.75rem;
     }
 }
 .fix{
@@ -87,6 +97,7 @@ input{
 
 .btn-drop, .btn-drop:hover{
     border-radius: 25px;
+    margin-left: 20%;
     padding: 8px 23px !important;
     background-color: transparent;
     border: 1px solid #7b96c4;
@@ -137,4 +148,15 @@ input:focus {
 .dropdown-item, .dropdown-item:hover {
     color: #929292 !important;
     cursor: pointer;
+}
+.input-group{
+    display: content !important;
+}
+.input-group-text {
+    border-left: none !important;
+    border-radius: 0 25px 25px 0;
+    background-color: transparent !important;
+    color: #7b96c4 !important;
+    border-color: #7b96c4;
+    margin-left: 0 !important;
 }

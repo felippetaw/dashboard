@@ -16,12 +16,14 @@ export class AppComponent implements OnInit{
   titleModal: string;
   
   getData() {
+    // get the companies and push it to the keys hash
     this.contents.forEach(element => {
       element.Courses.forEach(e => {
         e.Company = element.Company
         this.keys.push(e);
       });
     });
+    // align itens by company name and filter by active
     this.keys.sort((a, b) => a.Company > b.Company ? 1 : -1);
     this.keys = this.keys.filter(i => i.Status == 'Active');
   }
@@ -51,8 +53,9 @@ export class AppComponent implements OnInit{
     }
   }
 
+  //function to search elements based on the table rows and columns
   search() {
-    let input, filter, table, trs, td, i, txtValue;
+    let input, filter, table, trs, i;
 
     input = document.getElementById("input");
     filter = input.value.toUpperCase();
@@ -72,8 +75,8 @@ export class AppComponent implements OnInit{
   }
 
   openNav() {
-    document.getElementById("sidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("sidebar").style.width = "225px";
+    document.getElementById("main").style.marginLeft = "225px";
   }
 
   show(message) {
@@ -81,6 +84,7 @@ export class AppComponent implements OnInit{
     this.content = message; 
     this.titleModal = "Descrição do curso";    
   }
+
   hide() {
     this.showModal = false;
   }
